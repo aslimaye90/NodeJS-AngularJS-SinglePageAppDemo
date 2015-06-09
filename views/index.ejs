@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title><%= title %></title>
+    <link rel='stylesheet' href='/stylesheets/style.css'/>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.2.25/angular.min.js"></script>
+    <script src="//ajax.googleapis.com/ajax/libs/angularjs/1.2.25/angular-route.js"></script>
+  </head>
+  <body ng-app="myApp">
+    <h1><%= title %></h1>
+    <p>Welcome to <%= title %></p>
+
+    <div>
+    	<a href="#/partials/p1">p1</a>
+    	<a href="#/partials/p2">p2</a>
+    </div>
+
+    <div ng-view></div>
+  </body>
+  <script src="/javascripts/app.js"></script>
+</html>
